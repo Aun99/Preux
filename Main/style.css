@@ -72,6 +72,21 @@
         }
 
         /* Sidebar Navigation */
+
+
+/* Hide full sidebar initially */
+.sidebar-hidden .sidebar {
+  transform: translateX(calc(-1 * var(--sidebar-width)));
+}
+
+/* Show sidebar when class added */
+.sidebar-visible .sidebar {
+  transform: translateX(0);
+}
+
+
+
+
         .sidebar {
             position: fixed;
             top: 0;
@@ -490,6 +505,7 @@
             transition: all 0.4s ease;
             opacity: 0;
             transform: translateY(30px);
+            cursor: pointer;
         }
 
         .service-card.visible {
@@ -858,7 +874,9 @@
 #preuxText {
   font-size: 5vw;
   font-weight: bold;
-  color: #0a2647;
+  /* color: #0a2647; */
+            color: var(--accent-secondary);
+
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
   max-width: 100%;
