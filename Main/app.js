@@ -186,3 +186,11 @@
     }, index * 170); // 150ms delay between letters
   });
 }, 4000); // After logo finishes spinning 
+
+
+
+
+
+
+
+

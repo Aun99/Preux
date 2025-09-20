@@ -72,21 +72,6 @@
         }
 
         /* Sidebar Navigation */
-
-
-/* Hide full sidebar initially */
-.sidebar-hidden .sidebar {
-  transform: translateX(calc(-1 * var(--sidebar-width)));
-}
-
-/* Show sidebar when class added */
-.sidebar-visible .sidebar {
-  transform: translateX(0);
-}
-
-
-
-
         .sidebar {
             position: fixed;
             top: 0;
